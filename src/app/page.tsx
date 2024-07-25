@@ -13,6 +13,7 @@ export default function Home() {
   const [flat, setFlat] = useState('')
   const [dir, setDir] = useState('')
  const onChange = (value: any) => {
+  setDir('')
   setFlat(value)
  }
 
@@ -37,8 +38,8 @@ export default function Home() {
           <PinInputField />
         </PinInput>
       </HStack>
-        <Button onClick={() => onSubmit()} colorScheme='blue'>Button</Button>
-        {dir == 'left' ? <><Image src={image1}  alt="left" /> <Text>Left</Text></> : <><Image src={image2}  alt="right" />  <Text>Right</Text></> } 
+        <Button onClick={() => onSubmit()} colorScheme='blue'>Search</Button>
+        {dir != '' && <>{dir == 'left' ? <><Image src={image1}  alt="left" /> <Text>Left</Text></> : <><Image src={image2}  alt="right" />  <Text>Right</Text></> } </>}
       </Stack>
       </Center>
 
