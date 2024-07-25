@@ -29,7 +29,7 @@ export default function Home() {
       <Center>
       <Stack spacing='24px'>
       <Heading>Welcome to Mahima Studio Panache</Heading>
-      <Text>Enter flat number where you want to go just number, don't add A,B,C,D</Text>
+      <Text>Enter flat number </Text>
       <HStack align={'center'}>
         <PinInput value={flat} onChange={onChange}>
           <PinInputField />
